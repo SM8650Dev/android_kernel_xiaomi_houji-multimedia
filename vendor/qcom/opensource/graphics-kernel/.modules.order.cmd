@@ -1,0 +1,1 @@
+cmd_/SSD/cm23.2/kernel/xiaomi/houji-modules/oneplus-sm8650/vendor/qcom/opensource/graphics-kernel/modules.order := {   echo /SSD/cm23.2/kernel/xiaomi/houji-modules/oneplus-sm8650/vendor/qcom/opensource/graphics-kernel/msm_kgsl.ko; :; } > /SSD/cm23.2/kernel/xiaomi/houji-modules/oneplus-sm8650/vendor/qcom/opensource/graphics-kernel/modules.order

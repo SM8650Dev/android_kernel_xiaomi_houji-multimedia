@@ -1,0 +1,1 @@
+cmd_/SSD/cm23.2/kernel/xiaomi/houji-modules/oneplus-sm8650/vendor/qcom/opensource/video-driver/msm_video/modules.order := {   echo /SSD/cm23.2/kernel/xiaomi/houji-modules/oneplus-sm8650/vendor/qcom/opensource/video-driver/msm_video/msm_video.ko; :; } > /SSD/cm23.2/kernel/xiaomi/houji-modules/oneplus-sm8650/vendor/qcom/opensource/video-driver/msm_video/modules.order

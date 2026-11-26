@@ -709,10 +709,10 @@ void kgsl_device_snapshot(struct kgsl_device *device,
 #ifdef CONFIG_OPLUS_GPU_MINIDUMP
 			if (context!= NULL) {
 				dev_err(device->dev, "falut=%s, pid=%d, processname=%s\n",
-					kgsl_get_reason(device->snapshotfault, gmu_fault), context->proc_priv->pid, context->proc_priv->comm);
+					kgsl_get_reason(device->snapshotfault, gmu_fault), pid_nr(context->proc_priv->pid), context->proc_priv->comm);
 				memset(snapshot->snapshot_hashid, '\0', sizeof(snapshot->snapshot_hashid));
 				scnprintf(snapshot->snapshot_hashid, sizeof(snapshot->snapshot_hashid), "%d@%s@%s",
-				context->proc_priv->pid, context->proc_priv->comm, kgsl_get_reason(device->snapshotfault, gmu_fault));
+				pid_nr(context->proc_priv->pid), context->proc_priv->comm, kgsl_get_reason(device->snapshotfault, gmu_fault));
 			}
 #endif /* CONFIG_OPLUS_GPU_MINIDUMP */
 

@@ -1,0 +1,1 @@
+cmd_/SSD/cm23.2/kernel/xiaomi/houji-modules/oneplus-sm8650/vendor/qcom/opensource/audio-kernel/asoc/modules.order := {   echo /SSD/cm23.2/kernel/xiaomi/houji-modules/oneplus-sm8650/vendor/qcom/opensource/audio-kernel/asoc/machine_dlkm.ko; :; } > /SSD/cm23.2/kernel/xiaomi/houji-modules/oneplus-sm8650/vendor/qcom/opensource/audio-kernel/asoc/modules.order

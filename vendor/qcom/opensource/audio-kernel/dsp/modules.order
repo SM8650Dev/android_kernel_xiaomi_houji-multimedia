@@ -1,0 +1,7 @@
+/SSD/cm23.2/kernel/xiaomi/houji-modules/oneplus-sm8650/vendor/qcom/opensource/audio-kernel/dsp/q6_dlkm.ko
+/SSD/cm23.2/kernel/xiaomi/houji-modules/oneplus-sm8650/vendor/qcom/opensource/audio-kernel/dsp/adsp_loader_dlkm.ko
+/SSD/cm23.2/kernel/xiaomi/houji-modules/oneplus-sm8650/vendor/qcom/opensource/audio-kernel/dsp/q6_pdr_dlkm.ko
+/SSD/cm23.2/kernel/xiaomi/houji-modules/oneplus-sm8650/vendor/qcom/opensource/audio-kernel/dsp/spf_core_dlkm.ko
+/SSD/cm23.2/kernel/xiaomi/houji-modules/oneplus-sm8650/vendor/qcom/opensource/audio-kernel/dsp/q6_notifier_dlkm.ko
+/SSD/cm23.2/kernel/xiaomi/houji-modules/oneplus-sm8650/vendor/qcom/opensource/audio-kernel/dsp/audio_prm_dlkm.ko
+/SSD/cm23.2/kernel/xiaomi/houji-modules/oneplus-sm8650/vendor/qcom/opensource/audio-kernel/dsp/audpkt_ion_dlkm.ko

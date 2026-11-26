@@ -1,0 +1,5 @@
+0xdbdf76b2	kgsl_gpu_frame_count	/SSD/cm23.2/kernel/xiaomi/houji-modules/oneplus-sm8650/vendor/qcom/opensource/graphics-kernel/msm_kgsl	EXPORT_SYMBOL	
+0x8b1fce93	kgsl_add_rcu_notifier	/SSD/cm23.2/kernel/xiaomi/houji-modules/oneplus-sm8650/vendor/qcom/opensource/graphics-kernel/msm_kgsl	EXPORT_SYMBOL	
+0x0e46dbf8	kgsl_del_rcu_notifier	/SSD/cm23.2/kernel/xiaomi/houji-modules/oneplus-sm8650/vendor/qcom/opensource/graphics-kernel/msm_kgsl	EXPORT_SYMBOL	
+0x031452c3	kgsl_gpu_num_freqs	/SSD/cm23.2/kernel/xiaomi/houji-modules/oneplus-sm8650/vendor/qcom/opensource/graphics-kernel/msm_kgsl	EXPORT_SYMBOL	
+0xb4ac9c74	kgsl_gpu_stat	/SSD/cm23.2/kernel/xiaomi/houji-modules/oneplus-sm8650/vendor/qcom/opensource/graphics-kernel/msm_kgsl	EXPORT_SYMBOL	

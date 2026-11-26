@@ -1,0 +1,1 @@
+cmd_/SSD/cm23.2/kernel/xiaomi/houji-modules/oneplus-sm8650/vendor/qcom/opensource/audio-kernel/ipc/gpr_dlkm.mod := printf '%s\n'   gpr-lite.o | awk '!x[$$0]++ { print("/SSD/cm23.2/kernel/xiaomi/houji-modules/oneplus-sm8650/vendor/qcom/opensource/audio-kernel/ipc/"$$0) }' > /SSD/cm23.2/kernel/xiaomi/houji-modules/oneplus-sm8650/vendor/qcom/opensource/audio-kernel/ipc/gpr_dlkm.mod

@@ -1,0 +1,4 @@
+0x47dbba1d	msm_vidc_lossless_encode	/SSD/cm23.2/kernel/xiaomi/houji-modules/oneplus-sm8650/vendor/qcom/opensource/video-driver/msm_video/msm_video	EXPORT_SYMBOL	
+0x95d393df	msm_vidc_syscache_disable	/SSD/cm23.2/kernel/xiaomi/houji-modules/oneplus-sm8650/vendor/qcom/opensource/video-driver/msm_video/msm_video	EXPORT_SYMBOL	
+0x0fbebee9	msm_vidc_fw_dump	/SSD/cm23.2/kernel/xiaomi/houji-modules/oneplus-sm8650/vendor/qcom/opensource/video-driver/msm_video/msm_video	EXPORT_SYMBOL	
+0xcc0f9903	msm_vidc_enable_bugon	/SSD/cm23.2/kernel/xiaomi/houji-modules/oneplus-sm8650/vendor/qcom/opensource/video-driver/msm_video/msm_video	EXPORT_SYMBOL	
