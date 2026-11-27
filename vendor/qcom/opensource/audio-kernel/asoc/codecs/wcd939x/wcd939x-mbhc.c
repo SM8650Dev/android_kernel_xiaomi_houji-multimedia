@@ -1256,6 +1256,14 @@ static int create_sysfs_entry_file(struct wcd939x_priv *wcd939x, char *name, int
 	return sysfs_create_file(parent, &usbc_attr->attr.attr);
 }
 
+static void usbcss_hs_sysfs_remove(void *data)
+{
+	struct wcd939x_priv *wcd939x = data;
+
+	kobject_put(wcd939x->usbcss_hs_kobj);
+	wcd939x->usbcss_hs_kobj = NULL;
+}
+
 static int usbcss_hs_sysfs_init(struct wcd939x_priv *wcd939x)
 {
 	int rc = 0;
@@ -1267,6 +1275,9 @@ static int usbcss_hs_sysfs_init(struct wcd939x_priv *wcd939x)
 		return -EINVAL;
 	}
 
+	if (wcd939x->usbcss_hs_kobj)
+		return 0;
+
 	kobj = kobject_create_and_add("usbcss_hs", kernel_kobj);
 	if (!kobj) {
 		dev_err(wcd939x->dev, "%s: Could not create the USBC-SS HS kobj.\n", __func__);
@@ -1276,9 +1287,15 @@ static int usbcss_hs_sysfs_init(struct wcd939x_priv *wcd939x)
 	for (i = 0; i < ARRAY_SIZE(usbcss_sysfs_files); i++) {
 		rc = create_sysfs_entry_file(wcd939x, usbcss_sysfs_files[i],
 				0644, i, kobj);
+		if (rc) {
+			kobject_put(kobj);
+			return rc;
+		}
 	}
 
-	return 0;
+	wcd939x->usbcss_hs_kobj = kobj;
+	return devm_add_action_or_reset(wcd939x->dev,
+				       usbcss_hs_sysfs_remove, wcd939x);
 }
 
 static void wcd939x_wcd_mbhc_calc_impedance(struct wcd_mbhc *mbhc, uint32_t *zl, uint32_t *zr)
@@ -2070,7 +2087,9 @@ int wcd939x_mbhc_init(struct wcd939x_mbhc **mbhc,
 		ret = -EINVAL;
 		goto err;
 	}
-	usbcss_hs_sysfs_init(wcd939x);
+	ret = usbcss_hs_sysfs_init(wcd939x);
+	if (ret)
+		dev_warn(wcd939x->dev, "Failed to create USBC-SS HS sysfs: %d\n", ret);
 
 	return 0;
 err:

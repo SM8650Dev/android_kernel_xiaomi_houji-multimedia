@@ -97,6 +97,7 @@ struct wcd939x_priv {
 	struct wcd_clsh_cdc_info clsh_info;
 	/* mbhc module */
 	struct wcd939x_mbhc *mbhc;
+	struct kobject *usbcss_hs_kobj;
 
 	/*compander and xtalk*/
 	int compander_enabled[WCD939X_HPH_MAX];
