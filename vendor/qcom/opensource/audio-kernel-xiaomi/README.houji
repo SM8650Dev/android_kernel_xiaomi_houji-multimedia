@@ -1,0 +1,10 @@
+Xiaomi Pineapple audio source for houji
+
+Imported from MiCode/vendor_qcom_opensource_audio-kernel, aurora-u-oss,
+commit d2ddef03a379bc82c7bcd08481e29e08bbff80eb (2024-03-19).
+This release includes the houji CS35L41 TDM links and speaker DSP driver.
+
+The Lineage external-module adapter owns the build; Android.bp and Android.mk
+are disabled to avoid registering a second audio UAPI provider with Soong.
+The CS35L41 driver uses its vendor platform-data header explicitly. The
+MiCode 6.1 remoteproc PAS driver selects the ADSP DTB firmware itself.
