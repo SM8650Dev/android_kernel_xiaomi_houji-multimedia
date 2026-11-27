@@ -2342,14 +2342,6 @@ int wcd939x_mbhc_init(struct wcd939x_mbhc **mbhc,
 	}
 	usbcss_hs_sysfs_init(wcd939x);
 
-	wcd939x = dev_get_drvdata(component->dev);
-	if (!wcd939x) {
-		dev_err(component->dev, "%s: wcd939x pointer is NULL\n", __func__);
-		ret = -EINVAL;
-		goto err;
-	}
-	usbcss_hs_sysfs_init(wcd939x);
-
 	return 0;
 err:
 	if (wcd939x_mbhc)
